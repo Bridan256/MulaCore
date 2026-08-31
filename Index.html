@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MulaCore | One Platform, Endless Possibilities</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;background:#040807;color:#fff;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 15% 10%,rgba(53,243,154,.12),transparent 30%),radial-gradient(circle at 90% 35%,rgba(0,130,255,.11),transparent 30%),#040807}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.35;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:42px 42px}
+a{text-decoration:none;color:inherit}.wrap{width:min(1080px,92%);margin:auto}
+nav{padding:18px 0;display:flex;justify-content:space-between;align-items:center}.brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:20px}.brand i{font-style:normal;display:grid;place-items:center;width:37px;height:37px;border-radius:12px;background:linear-gradient(135deg,#35f39a,#087cff)}.green{color:#35f39a}.join{padding:10px 16px;border:1px solid rgba(53,243,154,.25);border-radius:25px;background:rgba(53,243,154,.06);color:#70f5b2;font-size:12px;font-weight:800}
+.hero{text-align:center;padding:65px 0 20px}.badge{display:inline-block;border:1px solid rgba(53,243,154,.22);background:rgba(53,243,154,.05);color:#69f3ad;border-radius:30px;padding:8px 13px;font-size:9px;font-weight:900;letter-spacing:1.4px}.hero h1{font-size:clamp(44px,8vw,78px);line-height:.98;letter-spacing:-4px;margin:23px auto 0}.hero h1 span{display:block;background:linear-gradient(90deg,#fff,#35f39a,#69b7ff);-webkit-background-clip:text;color:transparent}.hero p{max-width:650px;margin:24px auto;color:#8f9aaa;line-height:1.75;font-size:14px}.buttons{display:flex;justify-content:center;gap:11px;flex-wrap:wrap}.btn{display:inline-block;padding:14px 20px;border-radius:13px;font-size:12px;font-weight:900}.primary{background:linear-gradient(135deg,#35f39a,#19c878);color:#03140b;box-shadow:0 14px 35px rgba(53,243,154,.18)}.secondary{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.035)}
+.visual{height:300px;position:relative;margin:40px auto 0;max-width:780px}.core{position:absolute;width:180px;height:180px;top:45px;left:50%;transform:translateX(-50%);border:1px solid rgba(53,243,154,.25);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,rgba(53,243,154,.16),rgba(4,8,7,.95) 68%);box-shadow:0 0 70px rgba(53,243,154,.09)}.core b{width:78px;height:78px;display:grid;place-items:center;border-radius:23px;background:linear-gradient(135deg,#35f39a,#087cff);font-size:38px;transform:rotate(45deg);box-shadow:0 0 50px rgba(53,243,154,.3)}.core b::first-letter{transform:rotate(-45deg)}.float{position:absolute;padding:12px 14px;border:1px solid rgba(255,255,255,.1);border-radius:15px;background:rgba(8,15,12,.82);backdrop-filter:blur(12px);text-align:left;animation:up 4s ease-in-out infinite}.float small{display:block;color:#738094;font-size:9px}.float strong{display:block;color:#45f3a2;font-size:12px;margin-top:3px}.f1{left:2%;top:60px}.f2{right:2%;top:35px;animation-delay:1s}.f3{right:8%;bottom:10px;animation-delay:2s}@keyframes up{50%{transform:translateY(-10px)}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 auto 75px}.stat{text-align:center;padding:22px;border:1px solid rgba(255,255,255,.07);border-radius:17px;background:rgba(255,255,255,.025)}.stat b{display:block;color:#45f3a2;font-size:25px}.stat span{display:block;color:#737e90;font-size:10px;margin-top:5px}
+section.block{padding:70px 0}.heading{text-align:center;max-width:700px;margin:auto}.eyebrow{color:#45f3a2;font-size:10px;font-weight:900;letter-spacing:2px}.heading h2{font-size:clamp(30px,5vw,48px);letter-spacing:-2px;margin-top:12px}.heading h2 em{color:#45f3a2;font-style:normal}.heading p{color:#7f8999;font-size:12px;line-height:1.7;margin-top:13px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px}.card{padding:25px;border:1px solid rgba(255,255,255,.075);border-radius:22px;background:rgba(255,255,255,.03);min-height:230px;position:relative}.icon{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;background:rgba(53,243,154,.07);font-size:22px}.rate{position:absolute;right:22px;top:24px;text-align:right}.rate b{display:block;color:#45f3a2;font-size:14px}.rate small{color:#697487;font-size:8px}.card h3{margin-top:21px;font-size:18px}.card p{margin-top:9px;color:#818c9d;font-size:12px;line-height:1.7}.tag{display:inline-block;margin-top:17px;padding:6px 9px;border-radius:15px;background:rgba(255,255,255,.035);color:#9ca6b5;font-size:9px}
+.steps{max-width:800px;margin:38px auto 0}.step{display:flex;gap:18px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.07)}.num{min-width:45px;height:45px;display:grid;place-items:center;border:1px solid rgba(53,243,154,.2);border-radius:13px;color:#45f3a2;font-size:11px;font-weight:900}.step h3{font-size:16px}.step p{color:#7f8999;font-size:11px;line-height:1.6;margin-top:6px}
+.countries{margin-top:20px}.group{margin-top:42px}.group h3{font-size:19px;margin-bottom:17px}.countrygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.country{padding:13px 11px;border:1px solid rgba(255,255,255,.07);border-radius:12px;background:rgba(255,255,255,.025);font-size:11px;color:#b9c2cf}.country b{font-size:18px;margin-right:7px}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}.quote{padding:23px;border:1px solid rgba(255,255,255,.08);border-radius:20px;background:rgba(255,255,255,.03)}.stars{color:#45f3a2;letter-spacing:2px;font-size:11px}.quote p{color:#a2abb9;font-size:12px;line-height:1.7;margin:14px 0}.person{display:flex;align-items:center;gap:10px}.avatar{width:35px;height:35px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#35f39a,#087cff);font-size:12px;font-weight:900}.person strong{display:block;font-size:11px}.person small{display:block;color:#687386;font-size:9px;margin-top:3px}
+.notice{margin-top:24px;color:#697487;font-size:9px;line-height:1.6;text-align:center}
+.cta{margin:80px auto;padding:65px 22px;text-align:center;border:1px solid rgba(53,243,154,.15);border-radius:28px;background:radial-gradient(circle at center,rgba(53,243,154,.08),transparent 65%),rgba(255,255,255,.025)}.cta h2{font-size:clamp(32px,6vw,55px);letter-spacing:-2px;margin:13px 0}.cta h2 span{display:block;color:#45f3a2}.cta p{color:#7f8999;font-size:12px;line-height:1.7;margin:0 auto 22px;max-width:520px}.ref{display:block;color:#596476;font-size:9px;margin-top:13px}
+footer{text-align:center;padding:35px 0 45px}.footerbrand{display:flex;justify-content:center;align-items:center;gap:8px;font-weight:900}.footerbrand i{font-style:normal;width:30px;height:30px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,#35f39a,#087cff);font-size:12px}footer p{color:#687386;font-size:10px;margin-top:10px}.links{display:flex;justify-content:center;gap:18px;margin-top:18px}.links a{font-size:9px;color:#7d8798}.line{height:1px;background:rgba(255,255,255,.06);margin:25px 0}footer small{color:#4d5869;font-size:8px}
+@media(max-width:700px){.hero{padding-top:50px}.hero h1{letter-spacing:-2.5px}.hero p{font-size:13px}.visual{height:285px}.core{width:155px;height:155px;top:55px}.core b{width:67px;height:67px;font-size:32px}.float{padding:10px 11px}.f1{left:0;top:45px}.f2{right:0;top:20px}.f3{right:3%;bottom:5px}.stats{grid-template-columns:1fr;margin-bottom:50px}.cards{grid-template-columns:1fr}.countrygrid{grid-template-columns:repeat(2,1fr)}.testimonials{grid-template-columns:1fr}.step{gap:13px}.cta{margin:60px auto;padding:55px 18px}}
+@media(max-width:380px){.hero h1{font-size:40px}.countrygrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <div class="brand"><i>M</i><span>Mula<span class="green">Core</span></span></div>
+  <a class="join" href="https://www.stateflix.com/user/register.php?ref=smartwork" target="_blank" rel="noopener">Join Now</a>
+</nav>
+
+<header class="hero">
+  <div class="badge">✦ ONE PLATFORM • ENDLESS POSSIBILITIES</div>
+  <h1>One Platform.<span>Endless Possibilities.</span></h1>
+  <p>Discover digital activities, connect with people around the world, watch content, listen to music and explore opportunities — all from one place.</p>
+  <div class="buttons">
+    <a class="btn primary" href="https://www.stateflix.com/user/register.php?ref=smartwork" target="_blank" rel="noopener">Create Your Account →</a>
+    <a class="btn secondary" href="#activities">Explore Activities</a>
+  </div>
+  <div class="visual">
+    <div class="float f1">💬 <small>Chat activity</small><strong>UGX 10,000</strong></div>
+    <div class="float f2">🎵 <small>Music rating</small><strong>UGX 3,000</strong></div>
+    <div class="float f3">▶️ <small>Video activity</small><strong>UGX 5,000</strong></div>
+    <div class="core"><b>M</b></div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat"><b>5+</b><span>Digital Activities</span></div>
+  <div class="stat"><b>🌍</b><span>Africa & Beyond</span></div>
+  <div class="stat"><b>24/7</b><span>Mobile Access</span></div>
+</div>
+
+<section class="block" id="activities">
+  <div class="heading"><span class="eyebrow">EXPLORE MULACORE</span><h2>Turn everyday digital activities <em>into possibilities.</em></h2><p>Explore the listed activities and rates. Actual availability, eligibility and payouts depend on the platform's requirements.</p></div>
+  <div class="cards">
+    <article class="card"><div class="icon">💬</div><div class="rate"><b>UGX 10,000</b><small>listed rate / chat</small></div><h3>Chat With Foreigners</h3><p>Connect and chat with international partners through eligible chat activities.</p><span class="tag">🌍 International</span></article>
+    <article class="card"><div class="icon">👀</div><div class="rate"><b>UGX 10,000</b><small>listed rate / task</small></div><h3>WhatsApp Status Views</h3><p>Participate in eligible WhatsApp status viewing activities and campaigns.</p><span class="tag">📱 Social</span></article>
+    <article class="card"><div class="icon">▶️</div><div class="rate"><b>UGX 5,000</b><small>listed rate / video</small></div><h3>Watch YouTube Videos</h3><p>Watch eligible content and complete the required viewing activity.</p><span class="tag">🎬 Video</span></article>
+    <article class="card"><div class="icon">🎬</div><div class="rate"><b>UGX 5,000</b><small>listed rate / video</small></div><h3>Watch TikTok Videos</h3><p>Discover short-form content and participate in eligible video activities.</p><span class="tag">🔥 Trending</span></article>
+    <article class="card"><div class="icon">🎧</div><div class="rate"><b>UGX 3,000</b><small>listed rate / rated song</small></div><h3>Listen & Rate Music</h3><p>Listen to eligible music and provide your rating according to the activity requirements.</p><span class="tag">🎶 Music</span></article>
+  </div>
+</section>
+
+<section class="block">
+  <div class="heading"><span class="eyebrow">GET STARTED</span><h2>Your journey starts <em>here.</em></h2></div>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><div><h3>Create an account</h3><p>Register through the Stateflix signup page using the smartwork referral link.</p></div></div>
+    <div class="step"><div class="num">02</div><div><h3>Explore activities</h3><p>Access activities available to your account and review their requirements.</p></div></div>
+    <div class="step"><div class="num">03</div><div><h3>Complete activities</h3><p>Follow the instructions for each eligible activity.</p></div></div>
+    <div class="step"><div class="num">04</div><div><h3>Track your progress</h3><p>Monitor your activity and account information through your dashboard.</p></div></div>
+  </div>
+</section>
+
+<section class="block countries">
+  <div class="heading"><span class="eyebrow">AFRICA CONNECTED</span><h2>Possibilities across <em>Africa.</em></h2><p>East African countries are featured first, followed by other African countries.</p></div>
+  <div class="group"><h3>01 — East Africa</h3><div class="countrygrid">
+    <div class="country"><b>🇺🇬</b>Uganda</div><div class="country"><b>🇰🇪</b>Kenya</div><div class="country"><b>🇹🇿</b>Tanzania</div><div class="country"><b>🇷🇼</b>Rwanda</div>
+    <div class="country"><b>🇧🇮</b>Burundi</div><div class="country"><b>🇸🇸</b>South Sudan</div><div class="country"><b>🇨🇩</b>DR Congo</div><div class="country"><b>🇸🇴</b>Somalia</div>
+  </div></div>
+  <div class="group"><h3>02 — Other African Countries</h3><div class="countrygrid">
+    <div class="country"><b>🇳🇬</b>Nigeria</div><div class="country"><b>🇬🇭</b>Ghana</div><div class="country"><b>🇿🇦</b>South Africa</div><div class="country"><b>🇿🇲</b>Zambia</div>
+    <div class="country"><b>🇿🇼</b>Zimbabwe</div><div class="country"><b>🇲🇼</b>Malawi</div><div class="country"><b>🇲🇿</b>Mozambique</div><div class="country"><b>🇪🇹</b>Ethiopia</div>
+    <div class="country"><b>🇪🇬</b>Egypt</div><div class="country"><b>🇨🇲</b>Cameroon</div><div class="country"><b>🇸🇳</b>Senegal</div><div class="country"><b>🇨🇮</b>Côte d'Ivoire</div>
+  </div></div>
+</section>
+
+<section class="block">
+  <div class="heading"><span class="eyebrow">COMMUNITY VOICES</span><h2>What members <em>are saying.</em></h2><p>Sample testimonial cards for the landing-page design. Replace these with verified member reviews before publishing.</p></div>
+  <div class="testimonials">
+    <article class="quote"><div class="stars">★★★★★</div><p>“MulaCore gives me one simple place to discover different digital activities. The mobile experience is really easy to use.”</p><div class="person"><div class="avatar">A</div><div><strong>Alex M.</strong><small>Uganda</small></div></div></article>
+    <article class="quote"><div class="stars">★★★★★</div><p>“I like how the activities are clearly organized. I can quickly see what is available and choose what interests me.”</p><div class="person"><div class="avatar">J</div><div><strong>Janet K.</strong><small>Kenya</small></div></div></article>
+    <article class="quote"><div class="stars">★★★★★</div><p>“The concept is simple: one platform with different possibilities. It is especially convenient on my phone.”</p><div class="person"><div class="avatar">D</div><div><strong>Daniel T.</strong><small>Tanzania</small></div></div></article>
+  </div>
+  <p class="notice">Testimonials above are design placeholders, not verified customer statements.</p>
+</section>
+
+<section class="cta">
+  <span class="eyebrow">READY TO EXPLORE?</span>
+  <h2>Your next possibility<span>starts here.</span></h2>
+  <p>Create your Stateflix account through the <b>smartwork</b> referral and explore the activities available to your account.</p>
+  <a class="btn primary" href="https://www.stateflix.com/user/register.php?ref=smartwork" target="_blank" rel="noopener">Join Stateflix →</a>
+  <small class="ref">Referral: <b class="green">smartwork</b></small>
+</section>
+
+<footer>
+  <div class="footerbrand"><i>M</i><strong>Mula<span class="green">Core</span></strong></div>
+  <p>One Platform, Endless Possibilities.</p>
+  <div class="links"><a href="#activities">Activities</a><a href="#activities">Explore</a><a href="https://www.stateflix.com/user/register.php?ref=smartwork" target="_blank" rel="noopener">Stateflix Sign Up</a></div>
+  <div class="line"></div><small>© 2026 MulaCore. All rights reserved.</small>
+</footer>
+</div>
+</body>
+</html>
